@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="291af94b-92a0-4ca9-99c3-9e6bc2588e57" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProtonMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Registracija.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AutoOglasiPretraga.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePageClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testingData/StandardData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testingData/StandardData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testingData/TimeDelay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testingData/TimeDelay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase01EasyPolAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase02HardPolAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AutoOglasiPretraga.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AutoOglasiPretraga.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePageClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePageClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testingData/StandardData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testingData/StandardData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testingData/TimeDelay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testingData/TimeDelay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase01EasyPolAuto.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JXQ28BpcYk5ldIJ68KplYBQYv5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tomash/IdeaProjects/PolovniAutomobiliTest2Project&quot;
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="username_header" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.TestCase02HardPolAuto (1)">
+    <configuration name="TestCase02HardPolAuto (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PolovniAutomobiliTest2Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCase02HardPolAuto" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCase02HardPolAuto" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestiranjeSauceDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCase02HardPolAuto" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCase02HardPolAuto.TC_02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestiranjeSauceDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCase02HardPolAuto" />
+      <option name="METHOD_NAME" value="TC_02" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestCase02HardPolAuto (1)" />
+        <item itemvalue="TestNG.TestCase02HardPolAuto.TC_02" />
+        <item itemvalue="TestNG.TestCase02HardPolAuto" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="291af94b-92a0-4ca9-99c3-9e6bc2588e57" name="Changes" comment="" />
+      <created>1672221747665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672221747665</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+</project>

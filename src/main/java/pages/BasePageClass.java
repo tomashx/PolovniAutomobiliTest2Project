@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import testingData.TimeDelay;
 
 import java.time.Duration;
@@ -23,7 +24,21 @@ public abstract class BasePageClass {
         driver.get(url);
     }
 
-    protected WebElement locatedElementVisibleWait(By locator, int timeout){
+    protected String getCurrentUrl(){
+        return driver.getCurrentUrl();
+    }
+
+    protected static boolean changeURLWait(String url, int timeout){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        return wait.until(ExpectedConditions.urlToBe(url));
+    }
+    public static Boolean waitForUrl(String url, int timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        ExpectedCondition<Boolean> urlIsCorrect = arg0 -> driver.getCurrentUrl().equals(url);
+        return wait.until(urlIsCorrect);
+    }
+
+    protected static WebElement locatedElementVisibleWait(By locator, int timeout){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
@@ -52,10 +67,21 @@ public abstract class BasePageClass {
         element.click();
     }
 
+    protected WebElement findWebElement (By locator){
+        locatedElementVisibleWait(locator, TimeDelay.DELAY_1_MIN);
+        WebElement element = driver.findElement(locator);
+        return element;
+    }
+
     protected void buttonClick(By locator){
-        WebElement element = locatedElementVisibleWait(locator,TimeDelay.DELAY_3_SEC);
+        WebElement element = locatedElementVisibleWait(locator,TimeDelay.DELAY_5_SEC);
         elementClick(element);
     }
+    protected void buttonClickLongWait(By locator){
+        WebElement element = locatedElementVisibleWait(locator,TimeDelay.DELAY_1_MIN);
+        elementClick(element);
+    }
+
 
 
 }

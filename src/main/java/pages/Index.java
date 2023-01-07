@@ -1,20 +1,28 @@
 package pages;
 
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import testingData.StandardData;
 import testingData.TimeDelay;
 
 import java.time.Duration;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 public class Index extends BasePageClass {
 
     private final String indexURL = StandardData.INDEX_URL;
-    private final By buttonDetaljnaPretraga = By.xpath("//button[text()='DETALJNA PRETRAGA']");
+
+    private final By buttonRegistracija = By.xpath("//*[contains(@class, 'top-menu-register')]");
+    private final  By postaviOglasLocator = By.xpath("//*[contains(@class, 'top-menu-submit-classified')]");
+
+    //private final By prijaviSeMenuHoverLocator = By.xpath("//*[contains(@class, 'uk-button-dropdown')]");
+
+    private static final By userMenuDropDownClickLocator = By.xpath("//*[contains(@class, 'top-menu-profile')]//*[contains(@class, 'position-absolute')]");
+    private final By prijaviSeMenuHoverLocator = By.xpath("//*[contains(@class, 'top-menu-profile')]//*[contains(@class, 'js_ga-event')]/div");
+    private static final By indexPrijaviSeLocator = By.xpath("//span[text()='Moj profil']");
+    private static final By logovanEmailLocator = By.xpath("//*[@class='ym-hide-content']");
+    private static final By userMenuHoverLocator = By.xpath("//*[contains(@class, 'top-menu-profile')]");
 
     public Index (WebDriver driver) {
         super(driver);
@@ -25,28 +33,48 @@ public class Index extends BasePageClass {
         return this;
     }
 
-    public Index DetaljnaPretragaClick(){
-        buttonClick(buttonDetaljnaPretraga);
+
+    public Index PostaviOglasClick(){
+        buttonClick(postaviOglasLocator);
         return this;
     }
 
-    //@Deprecated
-    public Index SwitchToMainTab(){
+
+    public Index zatvoriTabove() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TimeDelay.DELAY_3_SEC));
+        String activeTab = driver.getWindowHandle();
 
-        String MainWindow=driver.getWindowHandle();
-        driver.switchTo().window(MainWindow);
+        for (String handle : driver.getWindowHandles()) {
+            if (!handle.equals(activeTab)) {
+                driver.switchTo().window(handle);
+                driver.close();
+            }
+        }
+
+        driver.switchTo().window(activeTab);
         return this;
-//        Set<String> s1=driver.getWindowHandles();
-//        Iterator<String> i1=s1.iterator();
-//        while (i1.hasNext()) {
-//            String ChildWindow = i1.next();
-//            if (!MainWindow.equalsIgnoreCase(ChildWindow)) {
-//                driver.switchTo().window(ChildWindow);
-//                driver.close();
-//            }driver.switchTo().window(MainWindow);
-//        }return this;
-
     }
 
+
+    public Index hoverUserToShowLogout() {
+        WebElement element = driver.findElement(userMenuHoverLocator);
+        Actions hoverAction = new Actions(driver);
+        hoverAction.moveToElement(element).perform();
+        return this;
+    }
+    public String getUserEmailAfterLogin() {
+        WebElement element = findWebElement(logovanEmailLocator);
+        return element.getText();
+    }
+
+
+    public String waitForPrijaviSe(){
+        WebElement element = locatedElementVisibleWait(indexPrijaviSeLocator, TimeDelay.DELAY_1_MIN);
+        return null;
+    }
+
+    public Index userMenuDropDownClick(){
+        buttonClick(userMenuDropDownClickLocator);
+        return this;
+    }
 }

@@ -6,9 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PrviSeleniumTestProject" />
-        <module name="SauceDemoTestProject" />
-        <module name="PolovniAutomobiliTestProject" />
+        <module name="PolovniAutomobiliTest2Project" />
+        <module name="TestiranjeSauceDemo" />
       </profile>
     </annotationProcessing>
   </component>
